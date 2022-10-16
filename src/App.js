@@ -6,7 +6,8 @@ import ReactDOM from "react-dom";
 import logo from './images/Wow.gif'
 import { FirstPage } from './FirstPage/FirstPage';
 import CrosswordPage from './CrosswordPage/CrosswordPage';
-// import News from './NewsF/News';
+import News from './NewsF/News';
+import PredictiveNews from './NewsF/PredictiveNews';
 
 
 
@@ -127,12 +128,17 @@ const App = () => {
                 {generalNews && <FirstPage generalNews={generalNews} />}
             </div>
             <div className="page" id="secondPage">
-{/* <News/> */}
+            <PredictiveNews />
             </div>
             <div className="page" id="thirdPage">
                 <CrosswordPage />
             </div>
-
+            <div className="page" id="fourthPage">
+                <News index = {3} />
+            </div>
+            <div className="page" id="fourthPage">
+                <News index = {6} />
+            </div>
 
         </Turn>
     );

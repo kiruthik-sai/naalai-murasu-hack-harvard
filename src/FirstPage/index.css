@@ -23,7 +23,7 @@ body {
 	/* margin: 4rem 2rem; */
 	line-height: 1.3;
 	text-align: justify;
-    padding: 0%;
+	padding: 0%;
 	column-break-inside: avoid;
 }
 
@@ -41,8 +41,8 @@ a:visited {
 
 #TitleName {
 	font-family: "English Towne", sans-serif;
-    margin: 2rem;
-    font-size: 130px;
+	margin: 2rem;
+	font-size: 130px;
 }
 
 .issue,
@@ -53,25 +53,24 @@ a:visited {
 }
 
 #entertainment {
-	font-family: PixGamer,sans-serif;
-    margin: 0;
-    font-size: xx-large;
-    text-align: center;
-    letter-spacing: 2px;
+	font-family: PixGamer, sans-serif;
+	margin: 0;
+	font-size: xx-large;
+	text-align: center;
+	letter-spacing: 2px;
 }
 
-#topTenBill,#topTenPerson {
-    font-family: 'Glocs', sans-serif;                                        
+#topTenBill,
+#topTenPerson {
+	font-family: "Glocs", sans-serif;
 }
 
-.news{
-    font-family: 'Georgia', sans-serif;
-                                                
+.news {
+	font-family: "Georgia", sans-serif;
 }
 
-.songs{
-    font-family: 'Georgia', sans-serif;
-                                                
+.songs {
+	font-family: "Georgia", sans-serif;
 }
 .main__wrapper {
 	max-width: 90%;
@@ -229,12 +228,11 @@ main .article-bar-1 {
 	}
 } */
 
-.newsTitle{
-    font-family: 'Glocs', sans-serif;
-    font-weight: bold;
-    margin-top: 1px;
-    /* font-size: 30px; */
-    
+.newsTitle {
+	font-family: "Glocs", sans-serif;
+	font-weight: bold;
+	margin-top: 1px;
+	/* font-size: 30px; */
 }
 main .cssgrid-collection {
 	grid-column: 1/-1;
@@ -271,6 +269,10 @@ figcaption {
 	font-size: 90%;
 }
 
+.predictive{
+    padding: 1.5rem;
+}
+
 aside {
 	text-align: center;
 	padding: 3px 0;
@@ -296,6 +298,17 @@ aside > div > div {
 	padding: 8px;
 }
 
+.FutureHeader {
+	font-family: "Cumiskat", sans-serif;
+	text-align: center;
+}
+
+#shortStoryImg{
+    width: 30%;
+}
+#shortStory{
+    font-family: "Georgia", sans-serif;
+}
 @media (min-width: 700px) {
 	.multi-column {
 		column-count: 2;
@@ -453,9 +466,9 @@ aside > div > div {
 }
 
 .sidebar-item {
-    margin-bottom: 2rem;
-    margin-top: 1rem;
-    padding: 1rem 0 0;
+	margin-bottom: 2rem;
+	margin-top: 1rem;
+	padding: 1rem 0 0;
 }
 .sidebar-item h5 {
 	text-align: center;

@@ -47,7 +47,20 @@
     background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/paper_fibers.png)
     repeat;
   }
+  div #fourthPage{
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/paper_fibers.png)
+    repeat;
+  }
    
+  .gifs{
+    width: 10%;
+    border: 0px;
+  }
+
+  .gridStory{
+    /* display: grid; */
+    
+  }
   
   /* .magazine .page img {
     width: 100%;

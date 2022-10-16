@@ -117,7 +117,7 @@ export const FirstPage = (props) => {
             }}>Convert to Speech</button><br />
             <div  class="main__wrapper"  >
                 <main>
-                    <h1 id="TitleName">Naalai Murasu</h1>
+                    <h1 id="TitleName">Proprum Times</h1>
 
                     <aside>
                         <div>
@@ -142,9 +142,6 @@ export const FirstPage = (props) => {
                     </a>
 
                     <a class="main-text item-with-image multi-column with-border">
-
-                        {/* <h4>Meta warns 1 million Facebook users who installed password-stealing apps</h4> */}
-                        {/* <p>Meta is warning 1 million Facebook users that their account information may have been compromised by third-party apps from Apple or Googles stores.According to the company, the apps are disguised as fun or useful services, like photo editors, camera apps, VPN services, horoscope apps, and fitness tracking tools.But these login features are merely a means of stealing Facebook users account info.And Metas Director of Threat Disruption, David Agranovich, noted that many of the apps Meta identified were barely functional.Interestingly, while the malicious Android apps were mostly consumer apps, like photo filters, the 47 iOS apps were almost exclusively what Meta calls business utility apps</p> */}
                         <h4 class="newsTitle">{news1.title}</h4>
                         <p class="news">{news1.summary}</p>
                         <figure>
