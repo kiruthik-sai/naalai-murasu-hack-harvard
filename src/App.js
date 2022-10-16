@@ -5,6 +5,8 @@ import $ from "jquery";
 import ReactDOM from "react-dom";
 import logo from './images/Wow.gif'
 import { FirstPage } from './FirstPage/FirstPage';
+import CrosswordPage from './CrosswordPage/CrosswordPage';
+// import News from './NewsF/News';
 
 
 
@@ -44,7 +46,7 @@ class Turn extends React.Component {
     render() {
 
         return (
-            
+
             <div
                 className={this.props.className}
                 style={Object.assign({}, this.props.style)}
@@ -83,8 +85,8 @@ const App = () => {
                 height: window.innerHeight,
                 width: window.innerWidth
             })
-$(".magazine").turn("width", dimensions.width);
-$(".magazine").turn("height", dimensions.height);
+            $(".magazine").turn("width", dimensions.width);
+            $(".magazine").turn("height", dimensions.height);
         }
 
         window.addEventListener('resize', handleResize)
@@ -93,14 +95,14 @@ $(".magazine").turn("height", dimensions.height);
     useEffect(() => {
         let generalNewsUrl = " https://domusbackend.herokuapp.com/get/news"
         fetch(generalNewsUrl)
-        .then(res=>res.json())
-        .then(data=>{
-            console.log("data", data.articles)
-            setGeneralNews(data.articles)
-        })
-        .catch(err=>{
-            console.log(err)
-        })
+            .then(res => res.json())
+            .then(data => {
+                console.log("data", data.articles)
+                setGeneralNews(data.articles)
+            })
+            .catch(err => {
+                console.log(err)
+            })
     }, [])
 
 
@@ -120,17 +122,18 @@ $(".magazine").turn("height", dimensions.height);
     };
     return (
         <Turn options={options} className="magazine" >
-            
-                <div className="page">
-                    {generalNews && <FirstPage generalNews={generalNews}/>}
-                </div>
-                <div className="page" id ="secondPage">
-                    {/* <button onClick={()=>{alert("click working")}}>Click me</button> */}
-                </div>
-                <div className="page" id= "thirdPage">
-                </div>
-                    
-        
+
+            <div className="page">
+                {generalNews && <FirstPage generalNews={generalNews} />}
+            </div>
+            <div className="page" id="secondPage">
+{/* <News/> */}
+            </div>
+            <div className="page" id="thirdPage">
+                <CrosswordPage />
+            </div>
+
+
         </Turn>
     );
 };
